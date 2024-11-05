@@ -1,3 +1,4 @@
 torch
 sentence_transformers
 beir
+mteb
