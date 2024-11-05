@@ -2,13 +2,16 @@
 
 This repository provides tools for fine-tuning and evaluating Slovak embedding models, specifically adapted for question answering and retrieval tasks in the Slovak language.
 
-i
-## Models and Datasets
+The first contribution is an evaluation dataset:
+
+- **[Retrieval SK Quad ](https://huggingface.co/datasets/TUKE-KEMT/retrieval-skquad)**: Slovak Dataset for Embedding Model Evaluation. Derived from the testing part of the Slovak question answering dataset, used to evaluate retrieval performance.
+
+The second contribution is a [fine-tuning script](train-bi-mnlr.py) from BERT type models and [Sentence Transformers](https://sbert.net/), that utilizes adversarial questions as hard negatives. This script uses the training part of the [Slovak question answering dataset](https://huggingface.co/datasets/TUKE-DeutscheTelekom/skquad).
+
+You can try the [SlovakBERT](https://huggingface.co/gerulata/slovakbert) model, finetuned with our script to produce document embeddings:
+
 
 - **[Slovak Embedding Model](https://huggingface.co/TUKE-DeutscheTelekom/slovakbert-skquad-mnlr)**: A fine-tuned [SlovakBERT model](https://huggingface.co/gerulata/slovakbert), trained on the [Slovak question answering dataset](https://huggingface.co/datasets/TUKE-DeutscheTelekom/skquad).
-- **[Slovak Dataset for Embedding Model Evaluation](https://huggingface.co/datasets/TUKE-KEMT/retrieval-skquad)**: Derived from the testing part of the Slovak question answering dataset, used to evaluate retrieval performance.
-
-
 
 ## Installation
 
