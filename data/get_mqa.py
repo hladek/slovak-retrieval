@@ -21,12 +21,13 @@ for sample in dataset:
         answers.rotate(1)
         bad_answers = list(answers)
         for question,answer,bad_answer in zip(questions,good_answers,bad_answers):
-            print(question)
-            print("---")
-            print(answer)
-            print("---")
-            print(bad_answer)
-            print(">>>")
+            print(json.dumps({"domain":domain,"anchor":question,"positive":answer,"negative":bad_answer}))
+            #print(question)
+            #print("---")
+            #print(answer)
+            #print("---")
+            #print(bad_answer)
+            #print(">>>")
         questions = []
         answers.clear()
 
