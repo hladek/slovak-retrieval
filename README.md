@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/874177438.svg)](https://doi.org/10.5281/zenodo.19112277)
+
 # Slovak Retrieval
 
 This repository provides tools for fine-tuning and evaluating Slovak embedding models, specifically adapted for question answering and retrieval tasks in the Slovak language.
